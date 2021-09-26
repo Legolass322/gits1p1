@@ -42,15 +42,15 @@ int main() {
         i = 0;
         cur_space -= strlen(data[index]);
         i++;
-        while (cur_space >= strlen(data[index + i]) + 1 && index + i < count) {
+        while ((cur_space >= (int) strlen(data[index + i]) + 1) && (index + i < count)) {
             cur_space -= strlen(data[index + i]) + 1;
             i++;
         }
-        if (i != 1) {
+        if (i > 1) {
             min_space = cur_space / (i - 1) + 1;
             remainder = cur_space % (i - 1);
         } else {
-            min_space = 0;
+            min_space = 1;
             remainder = 0;
         }
 
