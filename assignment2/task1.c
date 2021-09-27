@@ -57,10 +57,12 @@ int main() {
         // printing
         fprintf(fp, "%s", data[index]);
         for (int j = index + 1; j < i + index; j++) {
-            for (int space = 0; space < min_space + (int) (remainder > 0); space++) {
-                fprintf(fp, " ");
-            }
-            remainder > 0 ? remainder--: 0;
+            if (i + index < count) {
+                for (int space = 0; space < min_space + (int) (remainder > 0); space++) {
+                    fprintf(fp, " ");
+                }
+                remainder > 0 ? remainder--: 0;
+            } else fprintf(fp, " ");
             fprintf(fp, "%s", data[j]);
         }
         index += i;
