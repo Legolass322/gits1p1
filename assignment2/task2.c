@@ -244,7 +244,6 @@ int main() {
                 c = fgetc(fp);
             }
             buffer[i] = '\0';
-            printf("%s %d %d \n", buffer, count, resort[count].count_item);
             if (strlen(buffer) == 0) {
                 if (resort[count].count_item == 0) {
                     fprintf(op, "Invalid input!");
