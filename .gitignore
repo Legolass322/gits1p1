@@ -2,3 +2,4 @@ assignment*/*.txt
 *.exe
 .vscode
 test.c
+task_rewritten.c
