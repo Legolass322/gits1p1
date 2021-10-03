@@ -283,7 +283,7 @@ int main() {
         fprintf(op, " on ");
         fprintf(op, "%s ", resort[i].date.str_date);
         fprintf(op, "at ");
-        fprintf(op, "%s", resort[i].date.str_time);
+        fprintf(op, "%s.", resort[i].date.str_time);
         if (i != count - 1) fprintf(op, "\n");
     }
 
