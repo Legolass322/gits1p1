@@ -285,7 +285,7 @@ int main() {
         fprintf(op, "%s.", resort[i].date.str_time);
         if (i != count - 1) fprintf(op, "\n");
     }
-
+    fprintf(op, "\n");
     fclose(fp);
     fclose(op);
     return 0;
