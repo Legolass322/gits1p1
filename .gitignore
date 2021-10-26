@@ -3,3 +3,6 @@ assignment*/*.txt
 .vscode
 test.c
 task_rewritten.c
+.idea/*
+*.iml
+out/*
