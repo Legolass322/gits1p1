@@ -62,8 +62,9 @@ public class Task {
 
         // Output
 //        System.out.println(maxLength);
+//        FileWriter fileout = new FileWriter("C:\\Users\\79120\\Desktop\\ITP\\gits1p1\\assignment3\\output.txt");
         FileWriter fileout = new FileWriter("output.txt");
-        fileout.write(maxLength);
+        fileout.write(new String(String.valueOf(maxLength)));
         fileout.close();
     }
 }
